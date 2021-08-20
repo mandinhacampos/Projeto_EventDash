@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"><br>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="eventos.js"></script>
+    <title>Eventos - Sistema EventDASH </title>
+    <link rel="stylesheet" href="../css/Estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-9 col-xl-9 text-left">
+                <h3>EventDASH </h3>
+                <h6>Relatório de Eventos por Período</h6><br>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 text-right">
+                <img src="../imagens/logo.png" width="75px">
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 text-right">
+                <button type="button" class=" button-right btn btn-primary" onclick="home()">Home</button>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 text-right">
+                <button type="button" class=" button-right btn btn-primary" onclick="logout()">Logout</button>
+            </div>
+        </div>
+        
+
+        <div class="row">
+            <div class="col-6">
+                <label for="txtDataIni" class="form-label">Data de Início</label>
+                <input type="date" id="txtDataIni" class="form-control">
+            </div>
+
+            <div class="col-6">
+                <label for="txtDataFim" class="form-label">Data de Término</label>
+                <input type="date" id="txtDataFim" class="form-control">
+            </div>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <br>
+                <button type="button" class="btn btn-primary" onclick="gerarRelatorio()">Gerar Relatório</button>
+            </div>
+
+        </div>
+        <div id="relatorio" class="mt-3">
+            ** Por gentileza, defina o intervalo de tempo para extração do relatório.
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

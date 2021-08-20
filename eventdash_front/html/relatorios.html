@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"><br>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="relatorios.js"></script>
+    <title>Relatórios - Sistema EventDASH </title>
+    <link rel="stylesheet" href="../css/Estilo.css">
+</head>
+
+<body onload="carregaInfo()">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-10 col-xl-10 text-left">
+                <h3>Sistema EventDASH </h3>
+                <h6>Visão Colaborador - Painel de Relatórios</h6><br>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 text-right">
+                <img src="../imagens/logo.png" width="75px">
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 text-right">
+                <button type="button" class=" button-right btn btn-primary" onclick="logout()">Logout</button>
+            </div>
+        </div>
+        <div class="row">
+            <div id="fotoUser" class="col-xs-4 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+                **FOTO do usuario***
+            </div>
+            <div id="bioUser" class="col-xs-6 col-sm-9 col-md-9 col-lg-10 col-xl-10">
+                **BIOGRAFIA DO USUARIO***
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-12 text-center">
+                <h3>Selecione seu Relatório</h3>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="card col-5 text-center">
+                <div class="card-body">
+                    <h2 class="card-title">Relatórios de Eventos por Período</h2>
+                    <h1 class="card-text">Extração dos eventos de acordo com um período determinado.</h1>
+                    <a href="eventos.html" class="btn btn-primary">Selecionar</a>
+                </div>
+            </div>
+            <div class="col-2"></div>
+            <div class="card col-5 text-center">
+                <div class="card-body">
+                    <h2 class="card-title">Relatório de Alarmes</h2>
+                    <h1 class="card-text">Extração de todos os alarmes.</h1>
+                    <a href="eventoscompleto.html" class="btn btn-primary">Selecionar</a>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
